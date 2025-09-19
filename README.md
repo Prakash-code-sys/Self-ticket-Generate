@@ -55,7 +55,7 @@ where vineeth = 'A' and shift = 'A'
 union
 select healthcheck,types,mins,date,
 case
-when prashant = 'A' and shift = 'A' then 'Prashant'
+when prashant = 'A' and shift = 'A' then 'Prashanth'
 End as author
 from final
 where prashant = 'A' and shift = 'A'
