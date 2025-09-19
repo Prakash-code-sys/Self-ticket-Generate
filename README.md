@@ -208,6 +208,7 @@ when count_b = '2' and vinoth = 'B' and vineeth = 'B' and code = 'B1' then 'Vino
 when count_b = '2' and vinoth = 'B' and vineeth = 'B' and code = 'B2' then 'Vineeth'
 when count_b = '2' and vinoth = 'B' and prasath = 'B'  and code = 'B1' then 'Vinoth'
 when count_b = '2' and vinoth = 'B' and prasath = 'B'  and code = 'B2' then 'Prasath'
+--To elect 1 people out of 8
 when count_b = '1' and vineeth = 'B' and shift = 'B' then 'Vineeth'
 when count_b = '1' and prakash = 'B' and shift = 'B' then 'Prakash'
 when count_b = '1' and balaji = 'B' and shift = 'B' then 'Balaji'
