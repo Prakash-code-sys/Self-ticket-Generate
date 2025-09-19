@@ -107,7 +107,7 @@ where vineeth = 'C' and code = 'C'
 union
 select healthcheck,types,mins,date,
 case
-when prashant = 'C' and code = 'C' then 'Prashant'
+when prashant = 'C' and code = 'C' then 'Prashanth'
 End as author
 from final
 where prashant = 'C' and code = 'C'
