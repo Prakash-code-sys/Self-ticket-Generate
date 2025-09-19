@@ -534,7 +534,14 @@ union
 select healthcheck,types,mins,date,
 case
 when vinoth != 'W.OFF' and shift = 'E' then 'Vinoth'
-when vinoth = 'W.OFF' and shift = 'E' then 'You cannot'
+when vinoth = 'W.OFF' and vineeth = 'A' and shift = 'E' then 'Vineeth'
+when vinoth = 'W.OFF' and prakash = 'A' and shift = 'E' then 'Prakash'
+when vinoth = 'W.OFF' and kalyan = 'A' and shift = 'E' then 'Kalyan'
+when vinoth = 'W.OFF' and balaji = 'A' and shift = 'E' then 'Balaji'
+when vinoth = 'W.OFF' and venkadesh = 'A' and shift = 'E' then 'Venkadesh'
+when vinoth = 'W.OFF' and prasath = 'A' and shift = 'E' then 'Prasath' 
+when vinoth = 'W.OFF' and prashant = 'A' and shift = 'E' then 'Prashanth' 
+
 end as author
 from final
 where shift = 'E' 
