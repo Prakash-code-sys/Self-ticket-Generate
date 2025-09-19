@@ -6,9 +6,10 @@
 4. G shift count should not greater than 2
 5. F shift count should not greater than 2
 
-Note: 1. If F count >2 refer below combination from the bric and use the appropriate one
-      2. If any new proactive added or deleted need to update the Excel sheet we are following
-      3. If there is change in resource count update required in this code
+# Note: 
+1. If F count >2 refer below combination from the bric and use the appropriate one
+2. If any new proactive added or deleted need to update the Excel sheet we are following
+3. If there is change in resource count update required in this code
 (prakash prashant rajani vinoth balaji venkadesh prasath vineeth kalyan)
 
 # Brics to Build F shift
