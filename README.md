@@ -3,7 +3,7 @@
 ```
 select healthcheck,types,mins,date,
 case
-when vineeth = 'A' then 'Vineeth'
+when vineeth = 'A'  and shift = 'A' then 'Vineeth'
 End as author
 from final
 where vineeth = 'A' and shift = 'A'
@@ -11,7 +11,7 @@ where vineeth = 'A' and shift = 'A'
 union
 select healthcheck,types,mins,date,
 case
-when prashant = 'A' then 'Prashant'
+when prashant = 'A' and shift = 'A' then 'Prashant'
 End as author
 from final
 where prashant = 'A' and shift = 'A'
@@ -19,7 +19,7 @@ where prashant = 'A' and shift = 'A'
 union
 select healthcheck,types,mins,date,
 case
-when prakash = 'A' then 'Prakash'
+when prakash = 'A' and  shift = 'A' then 'Prakash'
 End as author
 from final
 where prakash = 'A' and shift = 'A'
@@ -27,15 +27,14 @@ where prakash = 'A' and shift = 'A'
 union
 select healthcheck,types,mins,date,
 case
-when balaji = 'A' then 'Balaji'
+when balaji = 'A' and shift = 'A' then 'Balaji'
 End as author
 from final
 where balaji = 'A' and shift = 'A'
-
 union
 select healthcheck,types,mins,date,
 case
-when prasath = 'A' then 'Prasath'
+when prasath = 'A' and shift = 'A' then 'Prasath'
 End as author
 from final
 where prasath = 'A' and shift = 'A'
@@ -43,7 +42,7 @@ where prasath = 'A' and shift = 'A'
 union
 select healthcheck,types,mins,date,
 case
-when venkadesh = 'A' then 'Venkadesh'
+when venkadesh = 'A' and shift = 'A' then 'Venkadesh'
 End as author
 from final
 where venkadesh = 'A' and shift = 'A'
@@ -51,7 +50,7 @@ where venkadesh = 'A' and shift = 'A'
 union
 select healthcheck,types,mins,date,
 case
-when kalyan = 'A' then 'Kalyan'
+when kalyan = 'A'  and shift = 'A' then 'Kalyan'
 End as author
 from final
 where kalyan = 'A' and shift = 'A'
@@ -59,7 +58,7 @@ where kalyan = 'A' and shift = 'A'
 union
 select healthcheck,types,mins,date,
 case
-when vineeth = 'C' then 'Vineeth'
+when vineeth = 'C'  and code = 'C' then 'Vineeth'
 End as author
 from final
 where vineeth = 'C' and code = 'C'
@@ -67,7 +66,7 @@ where vineeth = 'C' and code = 'C'
 union
 select healthcheck,types,mins,date,
 case
-when prashant = 'C' then 'Prashant'
+when prashant = 'C' and code = 'C' then 'Prashant'
 End as author
 from final
 where prashant = 'C' and code = 'C'
@@ -75,7 +74,7 @@ where prashant = 'C' and code = 'C'
 union
 select healthcheck,types,mins,date,
 case
-when prakash = 'C' then 'Prakash'
+when prakash = 'C' and code = 'C' then 'Prakash'
 End as author
 from final
 where prakash = 'C' and code = 'C'
@@ -83,7 +82,7 @@ where prakash = 'C' and code = 'C'
 union
 select healthcheck,types,mins,date,
 case
-when balaji = 'C' then 'Balaji'
+when balaji = 'C' and code = 'C' then 'Balaji'
 End as author
 from final
 where balaji = 'C' and code = 'C'
@@ -91,7 +90,7 @@ where balaji = 'C' and code = 'C'
 union
 select healthcheck,types,mins,date,
 case
-when prasath = 'C' then 'Prasath'
+when prasath = 'C' and code = 'C' then 'Prasath'
 End as author
 from final
 where prasath = 'C' and code = 'C'
@@ -99,7 +98,7 @@ where prasath = 'C' and code = 'C'
 union
 select healthcheck,types,mins,date,
 case
-when venkadesh = 'C' then 'Venkadesh'
+when venkadesh = 'C' and code = 'C' then 'Venkadesh'
 End as author
 from final
 where venkadesh = 'C' and code = 'C'
@@ -107,7 +106,7 @@ where venkadesh = 'C' and code = 'C'
 union
 select healthcheck,types,mins,date,
 case
-when kalyan = 'C' then 'Kalyan'
+when kalyan = 'C' and code = 'C' then 'Kalyan'
 End as author
 from final
 where kalyan = 'C' and code = 'C'
@@ -489,4 +488,14 @@ when count_f = '3' and rajani = 'F' and vinoth = 'F' and prakash = 'F' and code 
 end as author
 from final
 where shift = 'F'
+
+union
+select healthcheck,types,mins,date,
+case
+when vinoth != 'W.OFF' and shift = 'E' then 'Vinoth'
+when vinoth = 'W.OFF' and shift = 'E' then 'You cannot'
+end as author
+from final
+where shift = 'E' 
+
 ```
