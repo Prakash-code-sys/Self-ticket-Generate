@@ -1,4 +1,45 @@
 # To Generate self tickets
+# Prechecks and conditions to execute the query
+1. A shift count should not greater than 1
+2. B shift count should not greater than 2
+3. C shift count should not greater than 1
+4. G shift count should not greater than 2
+5. F shift count should not greater than 2
+
+Note: If F count >2 refer below combination from the bric and use the appropriate one
+
+# Brics to Build F shift
+
+```
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and prashant = 'F' and code = 'F1' then 'Rajani'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and prashant = 'F' and code = 'F2' then 'Vinoth'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and prashant = 'F' and code = 'F4' then 'Prashanth'
+
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and kalyan = 'F' and code = 'F1' then 'Rajani'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and kalyan = 'F' and code = 'F2' then 'Vinoth'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and kalyan = 'F' and code = 'F4' then 'Kalyan'
+
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and vineeth = 'F' and code = 'F1' then 'Rajani'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and vineeth = 'F' and code = 'F2' then 'Vinoth'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and vineeth = 'F' and code = 'F4' then 'Vineeth'
+
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and venkadesh = 'F' and code = 'F1' then 'Rajani'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and venkadesh = 'F' and code = 'F2' then 'Vinoth'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and venkadesh = 'F' and code = 'F4' then 'Venkadesh'
+
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and balaji = 'F' and code = 'F1' then 'Rajani'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and balaji = 'F' and code = 'F2' then 'Vinoth'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and balaji = 'F' and code = 'F4' then 'Balaji'
+
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and prakash = 'F' and code = 'F1' then 'Rajani'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and prakash = 'F' and code = 'F2' then 'Vinoth'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and prakash = 'F' and code = 'F4' then 'Prakash'
+
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and prasath = 'F' and code = 'F1' then 'Rajani'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and prasath = 'F' and code = 'F2' then 'Vinoth'
+when count_f = '3' and rajani = 'F' and vinoth = 'F' and prasath = 'F' and code = 'F4' then 'Prasath'
+
+```
 
 ```
 select healthcheck,types,mins,date,
