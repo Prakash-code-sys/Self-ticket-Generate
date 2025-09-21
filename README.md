@@ -343,7 +343,7 @@ when count_f = '2' and prasath = 'F' and balaji = 'F' and code = 'F4' then 'bala
 when count_f = '2' and balaji = 'F' and kalyan = 'F' and code1 = 'F4' then 'balaji'
 when count_f = '2' and balaji = 'F' and kalyan = 'F' and code = 'F4' then 'Kalyan'
 when count_f = '2' and balaji = 'F' and venkadesh = 'F' and code1 = 'F4' then 'balaji'
-when count_f = '2' and balaji = 'F' and venkadesh = 'F' and code = 'F4' and code = 'F4' then 'Venkadesh'
+when count_f = '2' and balaji = 'F' and venkadesh = 'F' and code = 'F4' then 'Venkadesh'
 when count_f = '2' and balaji = 'F' and vineeth = 'F' and code1 = 'F4' then 'balaji'
 when count_f = '2' and balaji = 'F' and vineeth = 'F' and code = 'F4' then 'Vineeth'
 when count_f = '2' and kalyan = 'F' and venkadesh = 'F' and code1 = 'F4' then 'Kalyan'
